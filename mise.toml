@@ -1,0 +1,12 @@
+[tools]
+go = "1.26.2"
+
+[tasks.run]
+run = [
+    "./build/kanban"
+]
+
+depends = ["build"]
+
+[tasks.build]
+run = "go build -o build/ ./cmd/..."
